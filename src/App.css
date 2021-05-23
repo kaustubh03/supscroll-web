@@ -1,10 +1,26 @@
+body{
+  margin:0px;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:100vh;
+}
 .App {
   text-align: center;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App_title{
+  color:#fafafa
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +51,102 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.children{
+  width: 300px;
+  height: 150px;
+  margin-right: 40px;
+}
+
+.App_content{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: #fafafa;
+  width:60%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.App_menu{
+  list-style: none;
+  display: flex;
+}
+.App_menu li{
+  margin:20px;    
+  padding: 9px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  color:#797979;
+}
+.App_menu .active-menu, .App_menu li:hover{
+  background:#eaeaea;
+  color:#121212;
+}
+
+.supscroll-wrapper a {
+  text-decoration: none;
+}
+.menu-child{
+    margin: 20px;
+    padding: 20px;
+    color: #121212;
+    background:#e7e7e7;
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    border-radius:70px;
+}
+.menu-child:hover{
+  color: #fafafa;
+  background:#f64f59;
+}
+
+.menu_showcase{
+  padding:50px;
+}
+
+.App_content_body{
+  min-height:300px;
+}
+
+.top-stories-children{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height:auto;
+    max-height: 250px;
+    border:1px solid #dfe1e5;
+    border-radius:10px;
+}
+.top-stories-children p{
+  white-space: break-spaces;
+  text-align: left;
+  padding:8px;
+}
+
+
+.github-corner{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.github-corner a img{
+      width: 150px;
+}
+.attribution a{
+  text-decoration: none;
+}
+
+.attribution a{
+  color:#fafafa;
+}
+.attribution a:hover{
+  color:#f0f327;
 }

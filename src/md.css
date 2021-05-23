@@ -1,0 +1,18 @@
+.usage{
+    text-align:left;
+    margin-bottom:100px;
+}
+
+.usage h6{
+    color:royalblue;
+}
+
+.usage h1{
+    padding-bottom:4px;
+    border-bottom:1px solid #eaeaea;
+}
+.usage pre{
+    background:#121212;
+    padding:15px 0px;
+    color:royalblue
+}
